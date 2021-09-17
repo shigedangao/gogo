@@ -1,2 +1,3 @@
 # gogo
-argocd application repo 
+
+Just a Helm chart and an argocd application
