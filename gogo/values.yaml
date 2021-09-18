@@ -33,7 +33,7 @@ env:
 
 service:
   type: LoadBalancer
-  port: 3000
+  port: 80
 
 ingress:
   enabled: false
