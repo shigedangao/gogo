@@ -27,6 +27,10 @@ securityContext:
   runAsNonRoot: true
   runAsUser: 1000
 
+env:
+  - name: ENV
+    value: prod
+
 service:
   type: LoadBalancer
   port: 3000
