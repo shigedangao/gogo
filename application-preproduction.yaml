@@ -11,7 +11,7 @@ spec:
     path: gogo
     helm:
       valueFiles:
-        - values.yaml
+        - values-preproduction.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: preproduction
