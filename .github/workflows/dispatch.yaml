@@ -17,9 +17,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: update values based on environment variable
         run: |
-          TAG_SHA=${{ github.event.inputs.tag }}
-          DOCKER_TAG=${TAG_SHA##*sha-}
-          sed -r "s/^(\s*tag\s*:\s*).*/\1sha-$DOCKER_TAG/" -i ./gogo/values-${{ github.event.inputs.environment }}.yaml
+          sed -r "s/^(\s*tag\s*:\s*).*/\1${{ github.event.inputs.tag }}/" -i ./gogo/values-${{ github.event.inputs.environment }}.yaml
       - name: push in repo
         run: |
           git config --local user.email "$(git log --format='%ae' HEAD^!)"
