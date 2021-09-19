@@ -1,0 +1,29 @@
+name: dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'environment name'
+        required: true
+      tag:
+        description: 'docker image tag'
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: update values based on environment variable
+        run: |
+          TAG_SHA=${{ github.event.inputs.tag }}
+          DOCKER_TAG=${TAG_SHA##*sha-}
+          sed -r "s/^(\s*tag\s*:\s*).*/\1sha-$DOCKER_TAG/" -i ./gogo/values-${{ github.event.inputs.environment }}.yaml
+      - name: push in repo
+        run: |
+          git config --local user.email "$(git log --format='%ae' HEAD^!)"
+          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git add gogo
+          git commit -m 'github-actions: Update values-${{ github.event.inputs.environment }}.yaml'
+          git push
