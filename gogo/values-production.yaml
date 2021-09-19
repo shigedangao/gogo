@@ -8,7 +8,7 @@ image:
   repository: marci/pointless
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: sha-8d3b1cd
+  tag: sha-57fd13a
 
 imagePullSecrets: []
 nameOverride: ""
