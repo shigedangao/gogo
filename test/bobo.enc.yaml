@@ -1,0 +1,21 @@
+apiVersion: ENC[AES256_GCM,data:sW4=,iv:uw8/KNO57EFrDpT8EDuhSBoSz/cQv9vENB/CPVH3Vis=,tag:GJoR0pC5/5/EQUlFjz4q6A==,type:str]
+kind: ENC[AES256_GCM,data:9Z2/SfG6,iv:ZYJ819WLfv9FNZuwi5pYjuw4rmm0deiXPGqbIgWIx5o=,tag:5iAPb+6kiJTr2Ta3GeqS1Q==,type:str]
+metadata:
+    name: ENC[AES256_GCM,data:7QXzInuLhPw=,iv:3vb7827TJJQX6wk3cCUXjz9YjX2BjrO9GIlMhKFKI3o=,tag:vF1jt1doLp6T96GBWdl8Bg==,type:str]
+type: ENC[AES256_GCM,data:5buwlWCV,iv:4xzyQqRdUAW1550vZIuZOfHn5PuazNf0DWA7QzlrSFM=,tag:rlCUu7DkJJLxaFYHfLJigw==,type:str]
+stringData:
+    username: ENC[AES256_GCM,data:smHS6detGWQBaOh9Ng==,iv:6h992QWMaG21ZMUqYs7wXB+xS815rWFF/YNgXlSb7sI=,tag:lUg2uTgXh7Vp0k5T2vlLRA==,type:str]
+sops:
+    kms: []
+    gcp_kms:
+        - resource_id: projects/mask-336418/locations/global/keyRings/mask-keyring/cryptoKeys/sopsie
+          created_at: "2022-02-25T16:32:52Z"
+          enc: CiQAqg1r4p0+B8bJ8IxET4PoWqn/eyGIKDsLKtkJdz/Ywd+cweQSSAC1BLUP2/BKiB1Ef9gzTeaUczFlY4BxSvUcgDobn+lABxvHvL4jpdPZQ90w54ToKlRvmbEGZWFmY8k4YN0ylKZYGSqGwv1mQw==
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-02-25T16:32:53Z"
+    mac: ENC[AES256_GCM,data:1/Sgay/DH9yP3nChO/gQK7mOi7hOQ2+buNZVXuWlHETWHb1FPS6yIQtUE/iFkViLq0v20M7oocnW2yNu5FV7RBk4hvugMb/y8d2fbrqbngBDXYrkq4IovWvGbrfIQ974LlgKDDy9tAfe2ENJ+m6IgrjV+1ycD7r4mELRN7hTgXs=,iv:MUpBt2s/imDEW6nDL3e3DJ5Xm0OyolU+KcsFazHoxqk=,tag:JXETtES+WhUZFKiz9Vd5Pg==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.1
