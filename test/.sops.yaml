@@ -1,2 +1,0 @@
-creation_rules:
-  - gcp_kms: projects/mask-336418/locations/global/keyRings/mask-keyring/cryptoKeys/sopsie
