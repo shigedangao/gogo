@@ -1,0 +1,21 @@
+apiVersion: ENC[AES256_GCM,data:wIk=,iv:uuW9aJ/ruBgYoVqnIEcm4XGATgAfR38wEgfEXTHFtx0=,tag:6Qb7gaafP9BJRxRbzLncBw==,type:str]
+kind: ENC[AES256_GCM,data:2SQjx5KpmbOk,iv:62qWOxGI+L2ytssj01gYiGX4AS1cK0Q/Aln90/eOXrY=,tag:RQQUelWAXdLAW9KAgxli7Q==,type:str]
+metadata:
+    name: ENC[AES256_GCM,data:S16uxBw/wh2CV0AtTA==,iv:PjCPiNr8IsUJwxrupVTZwhaJBJKKcfxyfa5SAr5ojRU=,tag:XKTrJxOR8Cnx1bSWRJHYlg==,type:str]
+data:
+    player_initial_lives: ENC[AES256_GCM,data:hg==,iv:4y7Pe7qfwLVstp2v65rJLE88OAE7F0nVznFi3iC5Xxc=,tag:xFe2uB3sXG/cudlP7ESQTQ==,type:str]
+    ui_properties_file_name: ENC[AES256_GCM,data:okEXDeKz3nsb3ioGJLhQQTzWdrf9AgncOg==,iv:z0VBFbm/xEoqDkdLGaqFNK3MFxSkldyUk60ONtPW1Xw=,tag:vVnfGg8mWgNfpIPDKod81Q==,type:str]
+sops:
+    kms: []
+    gcp_kms:
+        - resource_id: projects/mask-336418/locations/global/keyRings/mask-keyring/cryptoKeys/sopsie
+          created_at: "2022-03-16T14:52:45Z"
+          enc: CiQAqg1r4tobFk/J37dpYdgNqqIFC0oDG0GCtJTRdjSC1UwADtsSSQC1BLUP5fJmZStCBztyyDvzYhlCptyLjA9SeMQEspsxJMJEXb1qFLHjC0xPJ16k1a8l6cwGd7lAKd8rITTIRhHzZ6pIcAKNA6k=
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2022-03-16T14:52:45Z"
+    mac: ENC[AES256_GCM,data:npDTFgbypxIIwxXFNvHj3P1XPnxXcrCJJNcVaHT0DN7r3RdfRB559oXQ4iovnWC4DCEy/s8ksJ0VGT8JC57awIuOVIr5imqN+D8rXGWmN3J9CJ4HEa6xPL4FKxKv7KQagEm4+1FULrL+J3KVgZ2BaFLp6RLbZvd9JOmC1WfHaeg=,iv:g71LefA3cbvQYyjQlpGYT2V5dnKaGnGJzKdKRWnxMts=,tag:ZOfeWo6aJpBX4Fh9HR2pzA==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.2
